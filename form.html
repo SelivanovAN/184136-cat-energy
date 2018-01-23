@@ -28,22 +28,22 @@
           <section class="forms-program">
             <h2 class="forms-program__title">Подбор программы</h2>
             <p class="forms-program__about">Заполните анкету и мы подберем  программу питания для вашего кота</p>
-            <div class="forms-program__introduce__wrapper">
-              <div class="forms-program__introduce__label-wrapper">
+            <section class="forms-program__introduce-wrapper">
+              <section class="forms-program__introduce-label-wrapper">
                 <label class="forms-program__introduce-label">
                   <span class="forms-program__introduce-text  forms-program__introduce-text--big">Имя:*</span>
                   <input class="forms-program__introduce-input  forms-program__introduce-input--big" type="text" name="name" placeholder="Барсик">
                 </label>
-                <label class="forms-program__introduce-label  information-form-introduce__label--big">
+                <label class="forms-program__introduce-label  forms-program__introduce-label--big">
                   <span class="forms-program__introduce-text  forms-program__introduce-text--big">Вес (кг):*</span>
                   <input class="forms-program__introduce-input  forms-program__introduce-input--big" type="text" name="weight" placeholder="7">
                 </label>
-                <label class="forms-program__introduce-label  information-form-introduce__label--big">
+                <label class="forms-program__introduce-label  forms-program__introduce-label--big">
                   <span class="forms-program__introduce-text  forms-program__introduce-text--big">Возраст (лет):</span>
                   <input class="forms-program__introduce-input  forms-program__introduce-input--big" type="text" name="age" placeholder="7">
                 </label>
-              </div>
-            </div>
+              </section>
+            </section>
             <section class="forms-program__choise">
               <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="loss-field" value="loss" checked><label class="forms-program__choise-label" for="loss-field">Похудение</label>
               <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="weght-field" value="weght"><label class="forms-program__choise-label" for="weght-field">Набор Массы</label>
@@ -51,8 +51,10 @@
             </section>
           </section>
           <section class="forms-contact">
-            <div class="forms-contact__wrapper">
+            <div class="forms-contact__legend-wrapper">
               <h2 class="forms-contact__legend  forms-contact__legend--big">Контактные данне (владельца кота)</h2>
+            </div>
+            <div class="forms-contact__content-wrapper">
               <div class="forms-contact__label-wrapper">
                 <label class="forms-contact__label  forms-contact__label-email  forms-contact__label--big">
                   <span class="forms-contact__label-contact  forms-contact__label-contact--big">E-mail:*</span>
@@ -66,14 +68,18 @@
             </div>
           </section>
           <section class="forms-comment">
-            <div class="forms-comment__wrapper">
+            <div class="forms-comment__legend-wrapper">
               <h2 class="forms-comment__legend  forms-comment__legend--big">Комментарий</h2>
+            </div>
+            <div class="forms-comment__textarea-wrapper">
               <textarea class="forms-comment__textarea  forms-comment__textarea--font" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </section>
           <section class="forms-additionally"><!--Дополнительно-->
-            <span class="forms-additionally">Дополнительно</span>
-            <section class="forms-additionally-item">
+            <div class="forms-additionally__legend-wrapper">
+              <h2 class="forms-additionally__legend">Дополнительно</h2>
+            </div>
+            <section class="forms-additionally-item  forms-additionally-item-wrapper">
               <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="Sweetener-field" checked><label class="forms-additionally__label" for="slider-field">Сахарозаменитель</label>
               <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="water-field"><label class="forms-additionally__label" for="privilege-field">Питьевая вода</label>
               <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="milk-field"><label class="forms-additionally__label" for="news-field">Молоко</label>

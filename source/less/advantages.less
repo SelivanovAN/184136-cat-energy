@@ -12,7 +12,7 @@
   color: #111111;
 }
 .advantages__item {
-
+  position: relative;
 }
 .advantages__item-about {
   display: block;
@@ -26,4 +26,56 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+}
+.advantages__item-about--leafe::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.advantages__item-about--plate::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.advantages__item-about--fork::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.advantages__item-about--clock::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

@@ -74,10 +74,41 @@
 }
 
 @media (min-width: @tablet-widths) {
+  .forms-contact__content-wrapper {
+    width: 632px;
+  }
   .forms-contact__input {
     height: 52px;
   }
+  .forms-contact__label-contact {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .forms-contact__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
   .forms-contact__content-wrapper {
-    width: 632px;
+    width: 1220px;
+  }
+  .forms-contact__input {
+    height: 52px;
+  }
+  .forms-contact__label-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .forms-contact__label-contact {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .forms-contact__input {
+    width: 485px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

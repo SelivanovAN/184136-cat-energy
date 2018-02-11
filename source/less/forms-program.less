@@ -34,6 +34,7 @@
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .forms-program__introduce-label {
@@ -131,18 +132,87 @@
 }
 
 @media (min-width: @tablet-widths) {
-  .forms-program__introduce-input {
-    height: 52px;
+  .forms-program__title-wrapper {
+    padding-left: 70px;
+    padding-right: 109px;
+  }
+  .forms-program__title {
+    font-size: 60px;
   }
   .forms-program__about {
-    width: 270px;
+    width: 350px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .forms-program__introduce-wrapper {
     padding-left: 70px;
     padding-right: 67px;
   }
+  .forms-program__introduce-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .forms-program__introduce-input {
+    font-size: 20px;
+    line-height: 20px;
+    height: 52px;
+  }
   .forms-program__choise {
     margin-left: 70px;
     border-left: 1px solid #ededed;
+  }
+  .forms-program__choise-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .forms-program {
+    display: flex;
+    flex-direction: row;flex-wrap: wrap;
+  }
+  .forms-program__title-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 500px;
+  }
+  .forms-program__title {
+    font-size: 60px;
+  }
+  .forms-program__about {
+    width: 350px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .forms-program__introduce-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 80px;
+  }
+  .forms-program__introduce-label-wrapper {
+    width: 570px;
+    box-sizing: border-box;
+  }
+  .forms-program__introduce-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .forms-program__introduce-input {
+    font-size: 20px;
+    line-height: 20px;
+    height: 52px;
+  }
+  .forms-program__choise {
+    min-width: 570px;
+    box-sizing: border-box;
+    height: 183px;
+    margin: 0;
+    margin-top: 35px;
+    border-right: 1px solid #ededed;
+  }
+  .forms-program__choise-label {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

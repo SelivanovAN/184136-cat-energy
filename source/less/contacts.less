@@ -52,10 +52,36 @@
 @media (min-width: @tablet-widths) {
   .contacts__wrapper {
     width: 768px;
+    height: 400px;
     background-image: url("../img/map_tablet.png");
+    background-color: #d3e3e1;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .contacts__adress {
     width: 100%;
+    padding-left: 73px;
+    padding-right: 71px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .contacts {
+    background-image: url("../img/map_desktop.png");
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contacts__wrapper {
+    width: 1220px;
+    background-color: transparent;
+    padding-top: 95px;
+    box-sizing: border-box;
+  }
+  .contacts__adress {
+    width: 570px;
+    background-color: #ffffff;
     padding-left: 73px;
     padding-right: 71px;
     justify-content: space-between;

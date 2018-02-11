@@ -24,11 +24,13 @@
       </div>
     </header>
     <section class="info-forms">
-      <div class="info-forms__wrapper">
-        <form class="info-forms__elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+      <form class="info-forms__elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+        <div class="info-forms__wrapper">
           <section class="info-forms__program  forms-program">
-            <h2 class="forms-program__title">Подбор программы</h2>
-            <p class="forms-program__about">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+            <div class="forms-program__title-wrapper">
+              <h2 class="forms-program__title">Подбор программы</h2>
+              <p class="forms-program__about">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+          </div>
             <section class="forms-program__introduce-wrapper">
               <section class="forms-program__introduce-label-wrapper">
                 <label class="forms-program__introduce-label">
@@ -53,7 +55,7 @@
           </section>
           <section class="forms-contact-legend">
             <div class="forms-contact-legend__wrapper">
-              <h2 class="forms-contact-legend__h2  forms-contact-legend__h2--big">Контактные данне (владельца кота)</h2>
+              <h2 class="forms-contact-legend__h2  forms-contact-legend__h2--big">Контактные данные (владельца кота)</h2>
             </div>
           </section>
           <section class="forms-contact">
@@ -87,19 +89,19 @@
           </section>
           <section class="forms-additionally"><!--Дополнительно-->
             <section class="forms-additionally-item  forms-additionally-item-wrapper">
-              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="Sweetener-field" checked><label class="forms-additionally__label" for="slider-field">Сахарозаменитель</label>
-              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="water-field"><label class="forms-additionally__label" for="privilege-field">Питьевая вода</label>
-              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="milk-field"><label class="forms-additionally__label" for="news-field">Молоко</label>
-              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="drags-field"><label class="forms-additionally__label" for="gallery-field">Витамины</label>
+              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="Sweetener-field" checked><label class="forms-additionally__label" for="Sweetener-field">Сахарозаменитель</label>
+              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="water-field"><label class="forms-additionally__label" for="water-field">Питьевая вода</label>
+              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="milk-field"><label class="forms-additionally__label" for="milk-field">Молоко</label>
+              <input class="forms-additionally-item__checkbox" type="checkbox" name="additionally" id="drags-field"><label class="forms-additionally__label" for="drags-field">Витамины</label>
             </section>
           </section><!--/Дополнительно-->
-          <button class="info-forms__send  info-forms__send--big" type="submit" value="Отправить заявку">Отправить заявку</button>
-        </form>
-      </div>
+          <button class="info-forms__send  info-forms__send--big  info-forms__send--element" type="submit" value="Отправить заявку">Отправить заявку</button>
+        </div>
+      </form>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <section class="contacts__adress">
+        <section class="contacts__adress  contacts__adress--gray-background">
           <span class="contacts__invite">приглашаем  к сотрудничеству  дилеров!</span>
           <span class="contacts__drive">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</span>
         </section>

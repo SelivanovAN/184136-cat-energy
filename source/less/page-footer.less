@@ -3,6 +3,8 @@
 }
 
 .page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   margin: 0 auto;
   padding-left: 20px;
@@ -14,4 +16,13 @@
   min-height: 59px;
   text-align: center;padding-top: 35px;
   font-size: 0;
+}
+
+@media (min-width: @tablet-widths) {
+  .page-footer__wrapper {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
 }

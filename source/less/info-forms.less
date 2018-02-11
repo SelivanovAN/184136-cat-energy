@@ -38,3 +38,16 @@
 .info-forms__send--big {
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-widths) {
+  .info-forms__wrapper {
+    width: 768px;
+  }
+  .info-forms__send {
+    margin-left: 72px;
+  }
+  .info-forms__send--element::before {
+    bottom: 10px;
+    right: -90%;
+  }
+}
